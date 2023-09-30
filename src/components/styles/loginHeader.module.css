@@ -1,0 +1,13 @@
+.loginHeader, div > *  { 
+    color: #FFFFFF;
+}
+/* note */
+
+/* .menuDropDown li button {
+    transition: font-style 0.3s;
+} */
+
+.menuDropDown li button:hover {
+    font-style: italic;
+    text-decoration: underline;
+}

@@ -1,10 +1,11 @@
-import SearchBar from "../components/home/SearchBar";
-import header from "../components/home/header";
+import Header from "../components/HomePage/Header";
 
 export default function Home () {
     return (
         <div>
-            <header />
+            <div className="bg-dark bg-opacity-70 p-3">
+                <Header />
+            </div>
         </div>
     )
 }

@@ -1,0 +1,14 @@
+.formImg {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.formImg input:focus-visible {
+  outline-width: 0;
+}
+
+.searchBar {
+  width: 50%;
+  height: auto;
+}
