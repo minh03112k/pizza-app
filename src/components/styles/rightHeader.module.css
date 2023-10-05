@@ -1,0 +1,26 @@
+/* .loginHeader, div > *  { 
+    color: #FFFFFF;
+} */
+/* note */
+
+/* .menuDropDown li button {
+    transition: font-style 0.3s;
+} */
+
+.menuDropDown li button:hover {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.menuProduct li:hover {
+  text-decoration: underline;
+  color: lightgray;
+  text-shadow: 2px 2px 4px lightgray;
+  cursor: pointer;
+}
+
+.boxShadow:hover {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}

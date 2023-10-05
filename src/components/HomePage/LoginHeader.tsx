@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Button from "../Button/Button";
-import myImage from "../../Image/person.png"
+import CustomButton from "../Button/CustomButton";
 import { CiUser } from "react-icons/ci";
-import styles from "../styles/loginHeader.module.css"
+import styles from "../styles/rightHeader.module.css"
+import { Button } from "@chakra-ui/react";
 
 export default function LoginHeader () {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -13,14 +13,14 @@ export default function LoginHeader () {
         setIsLoggedIn(false);
     }
     return (
-        <div className={`${styles.loginHeader}`}>
+        <div >
             {isLoggedIn ? (
                 <div className="dropdown">
-                    <button className="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><CiUser style={{color: "#fff", fontSize: '30px'}}/></button>
+                    <Button pl={0} className="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" variant='ghost' colorScheme='blackAlpha'><CiUser className="text-light" style={{fontSize: '30px'}}/></Button>
                     <ul className="dropdown-menu bg-secondary-subtle">
                         <li className="p-2"><p className="text-body-emphasis fw-semibold m-0">We welcom you to Pizza...</p></li>
                         <div className="text-center" style={{padding: "2px"}}>
-                            <Button buttonName="LOGOUT" buttonOnClick={handleLogout} isRed />
+                            <CustomButton buttonName="LOGOUT" onClickButton={handleLogout} isLogout />
                         </div>
                         <div className={`${styles.menuDropDown}`}>
                             <li><button className="btn text-body-emphasis fw-semibold border-0 text-start">Personal Infomation</button></li>
@@ -32,7 +32,7 @@ export default function LoginHeader () {
                 </div>
             ) : (
                 <div>
-                    <Button buttonName="LOGIN" buttonOnClick={handleLogin}/>
+                    <CustomButton buttonName="LOGIN" onClickButton={handleLogin}/>
                 </div>
             )
         }
