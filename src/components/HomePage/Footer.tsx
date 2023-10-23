@@ -2,7 +2,7 @@ import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
 
 export default function Footer() {
   return (
-    <div className="bg-dark position-absolute bottom-0 w-100 p-0">
+    <div className="bg-dark w-100 p-0">
       <div className="container d-flex justify-content-between align-items-center">
         <div className="text-white my-3">
           <div className="d-block mb-4">
